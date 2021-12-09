@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background: url("/assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.home-conteiner {
+  padding: 0 24px;
+}
+
+.home-head {
+  font-family: Barlow Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+}
+
+.home-title {
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  text-align: center;
+  line-height: 100px;
+  margin: 0;
+}
+
+.home-paragraph {
+  font-family: Barlow Condensed;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: center;
+  color: #d0d6f9;
+}
+
+.button-div {
+  margin: 150px 0 0 0;
+  text-align: center;
+}
+
+.home-button {
+  text-decoration: none;
+  color: #0b0d17;
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 1.25px;
+  background-color: #ffffff;
+  padding: 60px 27px;
+  border-radius: 100%;
+}
+
+@keyframes buttonShadow {
+  from {
+    box-shadow: 0px 0px 0px 0px rgb(255, 255, 255, 0.1);
+  }
+  to {
+    box-shadow: 0px 0px 0px 40px rgb(255, 255, 255, 0.2);
+  }
+}
+
+.home-button:hover {
+  animation: buttonShadow 1s;
+  animation-fill-mode: forwards;
+}
