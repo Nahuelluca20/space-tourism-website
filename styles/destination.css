@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background-image: url("/assets/destination/background-destination-mobile.jpg");
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-size: cover;
+}
+
+.head-destination {
+  font-family: Barlow Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-align: center;
+  margin: 0;
+}
+
+.head-span {
+  font-family: Barlow Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  margin-right: 10px;
+}
+
+.img-div {
+  padding: 32px 100px 26px 100px;
+}
+
+.img-destination {
+  width: 100%;
+}
+.information {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.description {
+  text-align: center;
+}
+
+.destination-title {
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 64px;
+  text-align: center;
+  margin: 0;
+}
+
+.destination-paragraph {
+  font-family: Barlow;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  color: #d0d6f9;
+  margin: 1px 24px 0px 24px;
+}
+
+hr {
+  margin:32px 24px;
+}
+
+.data {
+  text-align: center;
+}
+
+.subheading1 {
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  margin: 12px 0 32px 0;
+}
+
+.subheading2 {
+  font-family: Barlow Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 2.3625px;
+  color: #D0D6F9;
+  margin:0;
+}

@@ -1,0 +1,121 @@
+.logo-nav {
+  margin: 2rem;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ul-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: hsl(0 0% 0% / 0.5);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+  .ul-nav {
+    backdrop-filter: blur(1rem);
+    background: hsl(0 0% 100% / 0.1);
+  }
+}
+
+.ul-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.ul-nav a > [aria-hidden="true"] {
+  font-weight: 700;
+  margin-inline-end: 0.75em;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 35em) {
+  .ul-nav {
+    --gap: 2em;
+    position: fixed;
+    inset: 0 0 0 30%;
+    padding: min(30vh, 10rem) 2rem;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+  }
+
+  .ul-nav[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    border: 0;
+    background-color: transparent;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 43px;
+    right: 2rem;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("../assets/shared/icon-close.svg");
+  }
+}
+
+@media (min-width: 35em) and (max-width: 55em) {
+  .ul-nav a > span[aria-hidden] {
+    display: none;
+  }
+}
+
+@media (min-width: 35em) {
+  .ul-nav {
+    --gap: clamp(1.5rem, 5vw, 3rem);
+    padding-inline: clamp(3em, 8vw, 10rem);
+  }
+
+  .nav-li {
+    padding: 2rem 0;
+  }
+
+  .nav-li:hover {
+    border-bottom: 2px solid #ffffff;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+.nav-li {
+  font-family: Barlow Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  border: 2px solid transparent;
+}
+
+
+
+.nav-span {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
