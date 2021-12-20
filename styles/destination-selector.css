@@ -17,7 +17,7 @@
   line-height: 17px;
   letter-spacing: 2.3625px;
   color: #d0d6f9;
-  padding-bottom: 3px;
+  padding-bottom: 12px;
   border-bottom: 2px solid transparent;
 }
 
@@ -28,10 +28,29 @@
 
 .destination-item:hover {
   color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 3px solid rgba(255,255,255, 0.5) ;
+  mix-blend-mode: normal;
 }
 
 .destination-item[aria-active="true"] {
   color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+@media (min-width: 35em) {
+  .destination-list {
+    padding: 0px 241px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destination-list {
+    justify-content: start;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+  .destination-item {
+    margin-right: 35px;
+  }
 }

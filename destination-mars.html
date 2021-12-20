@@ -11,6 +11,8 @@
       href="./assets/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./styles/destination.css" />
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/destination-selector.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
@@ -20,37 +22,42 @@
   </head>
   <body>
     <my-navigation></my-navigation>
-    <section>
-      <h5 class="head-destination">
-        <span class="head-span">01</span>PICK YOUR DESTINATION
-      </h5>
-      <div class="img-div">
-        <img src="/assets/destination/image-mars.png" class="img-destination" />
-      </div>
-      <div class="information">
-        <div class="description">
-          <h3 class="destination-title" id="destination-title">MARS</h3>
-          <p class="destination-paragraph">
-            Don’t forget to pack your hiking boots. You’ll need them to tackle
-            Olympus Mons, the tallest planetary mountain in our solar system.
-            It’s two and a half times the size of Everest!
-          </p>
+    <h5 class="head-destination">
+      <span class="head-span">01</span>PICK YOUR DESTINATION
+    </h5>
+    <section class="section-destination">
+      <div>
+        <div class="img-div">
+          <img src="/assets/destination/image-mars.png" class="img-destination" />
         </div>
-        <destination-selector></destination-selector>
       </div>
-      <hr color="#383B4B" />
-      <div class="data">
-        <div>
-          <span class="subheading2">AVG. DISTANCE</span>
-          <h4 class="subheading1">225 MIL. KM</h4>
+
+      <div>
+        <div class="information">
+          <div class="description">
+            <h3 class="destination-title" id="destination-title">MARS</h3>
+            <p class="destination-paragraph">
+              Don’t forget to pack your hiking boots. You’ll need them to tackle
+              Olympus Mons, the tallest planetary mountain in our solar system.
+              It’s two and a half times the size of Everest!
+            </p>
+          </div>
+          <destination-selector></destination-selector>
         </div>
-        <div>
-          <span class="subheading2">EST. TRAVEL TIME</span>
-          <h4 class="subheading1">9 MONTHS</h4>
+        <hr color="#383B4B" />
+        <div class="data">
+          <div>
+            <span class="subheading2">AVG. DISTANCE</span>
+            <h4 class="subheading1">225 MIL. KM</h4>
+          </div>
+          <div>
+            <span class="subheading2">EST. TRAVEL TIME</span>
+            <h4 class="subheading1">9 MONTHS</h4>
+          </div>
         </div>
       </div>
     </section>
   </body>
-  <script src="./scripts/navbar.js"></script>
-  <script src="./scripts/destination-selector.js"></script>
+  <script type="module" src="./scripts/navbar.js"></script>
+  <script type="module" src="./scripts/destination-selector.js"></script>
 </html>

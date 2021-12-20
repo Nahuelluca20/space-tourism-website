@@ -18,13 +18,12 @@ class Nav extends HTMLElement {
     </button>
 
     <nav id="navbar">
-      <link rel="stylesheet" href="../styles/navbar.css" />
       <ul class="ul-nav flex" id="primary-navigation" data-visible="false">
         <li class="nav-li">
           <a href="/index.html" class="a-nav"> <span class="nav-span" aria-hidden="true">00</span>HOME</a>
         </li>
         <li class="nav-li">
-          <a href="/destination-moon.html" class="a-nav">
+          <a href="./destination-moon.html" class="a-nav">
             <span class="nav-span" aria-hidden="true">01</span>DESTINATION</a
           >
         </li>

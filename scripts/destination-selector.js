@@ -5,7 +5,6 @@ class Selector extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <div class="selector">
-    <link rel="stylesheet" href="./styles/destination-selector.css">
           <ul class="destination-list">
             <li class="destination-item" aria-active="true" id="moon">
               <a href="destination-moon.html">MOON</a>
@@ -29,7 +28,6 @@ class Selector extends HTMLElement {
 
     const title = document.getElementById("destination-title");
     const titleValue = title.firstChild.nodeValue;
-    console.log(titleValue)
     if (titleValue === "MOON") {
       moon.setAttribute("aria-active", true);
       mars.setAttribute("aria-active", false);
