@@ -1,0 +1,97 @@
+body {
+  color: #ffffff;
+  margin: 0;
+  background-image: url("../assets/crew/background-crew-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.crew-title {
+  font-family: Barlow Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-align: center;
+  margin: 0;
+}
+
+.crew-title > span {
+  font-family: Barlow Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  margin-right: 10px;
+}
+
+.img-crew-div {
+  padding: 32px 99px;
+}
+
+.crew-destination {
+  width: 100%;
+}
+
+.dot-container {
+  text-align: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.17;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.dot[aria-active="true"] {
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+.crew-information {
+  text-align: center;
+}
+
+.role {
+  margin: 32px 0 8px 0;
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.name {
+  margin: 0;
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.description {
+  margin: 16px 24px 104px 24px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #d0d6f9;
+}
