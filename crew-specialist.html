@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/crew.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <title>Space tourism website | Crew</title>
+  </head>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Mission Specialist
-  Mark Shuttleworth
-
-  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-  African to travel to space as a space tourist.
-</body>
+  <body>
+    <my-navigation></my-navigation>
+    <section class="crew">
+      <h1 class="crew-title"><span>02</span> MEET YOUR CREW</h1>
+      <div class="img-crew-div" id="img-div" aria-role="specialist">
+        <img
+          aria-role="2"
+          id="img-person"
+          src="./assets/crew/image-mark-shuttleworth.png"
+          class="crew-destination"
+        />
+      </div>
+      <div class="dot-container" id="dot-container">
+        <a class="dot-0 dot" href="/crew-commander.html" aria-active="false"></a>
+        <a class="dot-1 dot" href="/crew-specialist.html" aria-active="true"></a>
+        <a class="dot-2 dot" href="/crew-pilot.html" aria-active="false"></a>
+        <a class="dot-3 dot" href="/crew-engineer.html" aria-active="false"></a>
+      </div>
+      <div class="crew-information">
+        <h4 class="role" id="role">Mission Specialist</h4>
+        <h2 class="name" id="name">MARK SHUTTLEWORTH</h2>
+        <p class="description" id="description">
+          Mark Richard Shuttleworth is the founder and CEO of Canonical, the
+          company behind the Linux-based Ubuntu operating system. Shuttleworth
+          became the first South African to travel to space as a space tourist.
+        </p>
+      </div>
+    </section>
+    <script type="module" src="./scripts/navbar.js"></script>
+  </body>
 </html>

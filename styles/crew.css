@@ -4,6 +4,7 @@ body {
   background-image: url("../assets/crew/background-crew-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .crew-title {
@@ -29,8 +30,20 @@ body {
   margin-right: 10px;
 }
 
-.img-crew-div {
-  padding: 32px 99px;
+.img-crew-div[aria-role="commander"] {
+  padding: 32px 99px 33px 99px;
+}
+
+.img-crew-div[aria-role="specialist"] {
+  padding: 32px 111px 33px 111px;
+}
+
+.img-crew-div[aria-role="pilot"] {
+  padding: 32px 98px 33px 98px;
+}
+
+.img-crew-div[aria-role="engineer"] {
+  padding: 32px 75px 33px 75px;
 }
 
 .crew-destination {
@@ -50,6 +63,7 @@ body {
   border-radius: 50%;
   display: inline-block;
   margin: 0 8px;
+  cursor: pointer;
 }
 
 .dot[aria-active="true"] {
@@ -62,6 +76,7 @@ body {
 }
 
 .role {
+  text-transform: uppercase;
   margin: 32px 0 8px 0;
   font-family: Bellefair;
   font-style: normal;
@@ -75,6 +90,7 @@ body {
 }
 
 .name {
+  text-transform: uppercase;
   margin: 0;
   font-family: Bellefair;
   font-style: normal;

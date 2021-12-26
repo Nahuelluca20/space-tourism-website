@@ -28,7 +28,7 @@ class Nav extends HTMLElement {
           >
         </li>
         <li class="nav-li">
-          <a href="./crew.html" class="a-nav"> <span class="nav-span" aria-hidden="true">02</span>CREW </a>
+          <a href="./crew-commander.html" class="a-nav"> <span class="nav-span" aria-hidden="true">02</span>CREW </a>
         </li>
         <li class="nav-li">
           <a href="" class="a-nav">
