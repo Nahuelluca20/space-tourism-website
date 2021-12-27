@@ -3,33 +3,11 @@ class Nav extends HTMLElement {
     super();
   }
   connectedCallback() {
-    const getAttribute = this.getAttribute("active");
-    let home = "";
-    let destination = "";
-    let crew = "";
-    let technology = "";
+    const getAttributeHome = this.getAttribute("home");
+    const getAttributeDestination = this.getAttribute("destination")
+    const getAttributeCrew = this.getAttribute("crew")
+    const getAttributeTech = this.getAttribute("technology")
 
-    if (getAttribute === "home") {
-      home = "home";
-      destination = "";
-      crew = "";
-      technology = "";
-    } else if (getAttribute === "destination") {
-      home = "";
-      destination = "destination";
-      crew = "";
-      technology = "";
-    } else if (getAttribute === "crew") {
-      home = "";
-      destination = "";
-      crew = "crew";
-      technology = "";
-    } else if (getAttribute === "technology") {
-      home = "";
-      destination = "";
-      crew = "";
-      technology = "technology";
-    }
     this.innerHTML = `
     <header class="primary-header flex">
     <div>
@@ -46,18 +24,18 @@ class Nav extends HTMLElement {
 
     <nav id="navbar">
       <ul class="ul-nav flex" id="primary-navigation" data-visible="false">
-        <li class="nav-li" active="${home}">
+        <li class="nav-li" active="${getAttributeHome}">
           <a href="/index.html" class="a-nav"> <span class="nav-span" aria-hidden="true">00</span>HOME</a>
         </li>
-        <li class="nav-li" active="${destination}">
+        <li class="nav-li" active="${getAttributeDestination}">
           <a href="./destination-moon.html" class="a-nav">
             <span class="nav-span" aria-hidden="true">01</span>DESTINATION</a
           >
         </li>
-        <li class="nav-li" active="${crew}">
+        <li class="nav-li" active="${getAttributeCrew}">
           <a href="./crew-commander.html" class="a-nav"> <span class="nav-span" aria-hidden="true">02</span>CREW </a>
         </li>
-        <li class="nav-li" active="${technology}">
+        <li class="nav-li" active="${getAttributeTech}">
           <a href="" class="a-nav">
             <span class="nav-span" aria-hidden="true">03</span>TECHNOLOGY</a
           >
