@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/crew.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
@@ -25,37 +26,43 @@
     <my-navigation></my-navigation>
     <section class="crew">
       <h1 class="crew-title"><span>02</span> MEET YOUR CREW</h1>
-      <div class="img-crew-div" id="img-div" aria-role="pilot">
-        <img
-          aria-role="2"
-          id="img-person"
-          src="./assets/crew/image-victor-glover.png"
-          class="crew-destination"
-        />
-      </div>
-      <div class="dot-container" id="dot-container">
-        <a
-          class="dot-0 dot"
-          href="/crew-commander.html"
-          aria-active="false"
-        ></a>
-        <a
-          class="dot-1 dot"
-          href="/crew-specialist.html"
-          aria-active="false"
-        ></a>
-        <a class="dot-2 dot" href="/crew-pilot.html" aria-active="true"></a>
-        <a class="dot-3 dot" href="/crew-engineer.html" aria-active="false"></a>
-      </div>
-      <div class="crew-information">
-        <h4 class="role" id="role">pilot</h4>
-        <h2 class="name" id="name">Victor Glover</h2>
-        <p class="description" id="description">
-          Pilot on the first operational flight of the SpaceX Crew Dragon to the
-          International Space Station. Glover is a commander in the U.S. Navy
-          where he pilots an F/A-18.He was a crew member of Expedition 64, and
-          served as a station systems flight engineer.
-        </p>
+      <div class="container-crew">
+
+        <div class="img-crew-div" id="img-div" aria-role="pilot">
+          <img
+            aria-role="2"
+            id="img-person"
+            src="./assets/crew/image-victor-glover.png"
+            class="crew-destination"
+          />
+        </div>
+  
+        <div class="information-div">
+          <div class="dot-container" id="dot-container">
+            <a
+              class="dot-0 dot"
+              href="/crew-commander.html"
+              aria-active="false"
+            ></a>
+            <a
+              class="dot-1 dot"
+              href="/crew-specialist.html"
+              aria-active="false"
+            ></a>
+            <a class="dot-2 dot" href="/crew-pilot.html" aria-active="true"></a>
+            <a class="dot-3 dot" href="/crew-engineer.html" aria-active="false"></a>
+          </div>
+          <div class="crew-information">
+            <h4 class="role" id="role">pilot</h4>
+            <h2 class="name" id="name">Victor Glover</h2>
+            <p class="description" id="description">
+              Pilot on the first operational flight of the SpaceX Crew Dragon to the
+              International Space Station. Glover is a commander in the U.S. Navy
+              where he pilots an F/A-18.He was a crew member of Expedition 64, and
+              served as a station systems flight engineer.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <script type="module" src="./scripts/navbar.js"></script>

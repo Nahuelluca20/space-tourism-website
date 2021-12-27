@@ -111,3 +111,125 @@ body {
   text-align: center;
   color: #d0d6f9;
 }
+
+@media (min-width: 35em) {
+  body {
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
+  }
+
+  .crew-title {
+    text-align: start;
+    margin: 40px 0 0 39px;
+  }
+
+  .information-div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .container-crew {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .img-crew-div[aria-role="commander"] {
+    padding: 40px 156px 0px 156px;
+  }
+
+  .img-crew-div[aria-role="specialist"] {
+    padding: 40px 200px 0px 200px;
+  }
+
+  .img-crew-div[aria-role="pilot"] {
+    padding: 40px 178px 0px 156px;
+  }
+
+  .img-crew-div[aria-role="engineer"] {
+    padding: 40px 95px 0px 134px;
+  }
+
+  .description {
+    margin: 16px 0 0 0;
+  }
+  .crew-information {
+    margin: 60px 155px 40px 155px;
+  }
+  .role {
+    font-size: 27px;
+  }
+  .name {
+    font-size: 40px;
+    padding-top: 15px;
+  }
+  .description {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+  }
+  .crew-title {
+    text-align: start;
+    font-size: 28px;
+
+    margin: 70px 0 0 166px;
+  }
+  .container-crew {
+    flex-direction: row-reverse;
+  }
+  .crew-information {
+    margin: 0;
+  }
+  .role {
+    text-align: start;
+    margin: 154px 0 15px 165px;
+  }
+  .name {
+    text-align: start;
+    margin: 0px 81px 15px 165px;
+  }
+  .description {
+    text-align: start;
+    margin: 27px 125px 120px 165px;
+    line-height: 32px;
+  }
+
+  .dot-container {
+    text-align: start;
+    margin-left: 167px;
+    margin-bottom: 94px;
+  }
+  .img-crew-div[aria-role="commander"] > img {
+    width: 568.07px;
+    height: 712px;
+  }
+  .img-crew-div[aria-role="commander"] {
+    padding: 0px 137px 0px 0px;
+  }
+
+  .img-crew-div[aria-role="specialist"] > img {
+    width: 453.44px;
+    height: 654px;
+  }
+  .img-crew-div[aria-role="specialist"] {
+    padding: 0px 186px 0px 0px;
+  }
+
+  .img-crew-div[aria-role="pilot"] > img {
+    width: 554.39px;
+    height: 681px;
+  }
+  .img-crew-div[aria-role="pilot"] {
+    padding: 0px 142px 0px 0px;
+  }
+
+  .img-crew-div[aria-role="engineer"] > img {
+    width: 615.57px;
+    height: 607px;
+  }
+  .img-crew-div[aria-role="engineer"] {
+    padding: 40px 89px 0px 0px;
+  }
+}
