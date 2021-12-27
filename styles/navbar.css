@@ -86,7 +86,21 @@
   }
 
   .nav-li:hover {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 4px solid rgba(255,255,255, 0.5) ;
+    mix-blend-mode: normal;
+  }
+
+  .nav-li[active="home"] {
+    border-bottom: 4px solid #ffffff;
+  }
+  .nav-li[active="destination"] {
+    border-bottom: 4px solid #ffffff;
+  }
+  .nav-li[active="crew"] {
+    border-bottom: 4px solid #ffffff;
+  }
+  .nav-li[active="technology"] {
+    border-bottom: 4px solid #ffffff;
   }
 }
 
@@ -99,8 +113,6 @@
   letter-spacing: 2.7px;
   border: 2px solid transparent;
 }
-
-
 
 .nav-span {
   font-size: 16px;
