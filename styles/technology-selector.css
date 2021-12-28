@@ -20,6 +20,10 @@
   padding: 11px 16px;
 }
 
+.selector-container > a:hover {
+  border: 2px solid rgba(255, 255, 255);
+}
+
 .selector-container > a[active="vehicle"] {
   color: #0b0d17;
   border: 2px solid #ffffff;
