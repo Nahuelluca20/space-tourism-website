@@ -5,6 +5,7 @@ body {
   color: #ffffff;
   background-size: cover;
   overflow-x: hidden;
+  background-position: fixed;
 }
 
 .home-conteiner {

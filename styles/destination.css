@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   color: #ffffff;
   background-size: cover;
+  background-position: fixed;
 }
 
 .head-destination {
