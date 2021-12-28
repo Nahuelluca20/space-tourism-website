@@ -1,0 +1,51 @@
+.selector-container {
+  display: flex;
+  margin: 34px 0 26px 0;
+  justify-content: center;
+}
+
+.selector-container > a {
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  mix-blend-mode: normal;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 0 8px;
+  padding: 11px 16px;
+}
+
+.selector-container > a[active="vehicle"] {
+  color: #0b0d17;
+  border: 2px solid #ffffff;
+  background: #ffffff;
+}
+
+.selector-container > a[active="spaceport"] {
+  color: #0b0d17;
+  border: 2px solid #ffffff;
+  background: #ffffff;
+}
+
+.selector-container > a[active="capsule"] {
+  color: #0b0d17;
+  border: 2px solid #ffffff;
+  background: #ffffff;
+}
+
+@media (min-width: 35em) {
+  .selector-container > a {
+    padding: 16px 26px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .selector-container {
+    margin: 56px 0 44px 0;
+  }
+}

@@ -32,7 +32,22 @@
   mix-blend-mode: normal;
 }
 
-.destination-item[aria-active="true"] {
+.destination-item[active="moon"] {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+.destination-item[active="mars"] {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+.destination-item[active="titan"] {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+.destination-item[active="europa"] {
   color: #ffffff;
   border-bottom: 3px solid #ffffff;
 }

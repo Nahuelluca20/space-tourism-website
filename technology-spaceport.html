@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/technology.css" />
+    <link rel="stylesheet" href="./styles/technology-selector.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Technology</title>
+  </head>
+  <body>
+    <my-navigation technology="technology"></my-navigation>
+    <section>
+      <h5 class="tech-title"><span>03</span>space launch 101</h5>
+      <div class="img-div" aria-photo="spaceport"></div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+      <tech-selector spaceport="spaceport"></tech-selector>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Spaceport
-
-  A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
-  by analogy to the seaport for ships or airport for aircraft. Based in the 
-  famous Cape Canaveral, our spaceport is ideally situated to take advantage 
-  of the Earth’s rotation for launch.
-</body>
+      <h4 class="subtitle">THE TERMINOLOGY…</h4>
+      <h3 class="title">SPACEPORT</h3>
+      <p class="paragraph">
+        A spaceport or cosmodrome is a site for launching (or receiving)
+        spacecraft, by analogy to the seaport for ships or airport for aircraft.
+        Based in the famous Cape Canaveral, our spaceport is ideally situated to
+        take advantage of the Earth’s rotation for launch.
+      </p>
+    </section>
+  </body>
+  <script type="module" src="./scripts/navbar.js"></script>
+  <script src="./scripts/technology-selector.js"></script>
 </html>

@@ -4,9 +4,9 @@ class Nav extends HTMLElement {
   }
   connectedCallback() {
     const getAttributeHome = this.getAttribute("home");
-    const getAttributeDestination = this.getAttribute("destination")
-    const getAttributeCrew = this.getAttribute("crew")
-    const getAttributeTech = this.getAttribute("technology")
+    const getAttributeDestination = this.getAttribute("destination");
+    const getAttributeCrew = this.getAttribute("crew");
+    const getAttributeTech = this.getAttribute("technology");
 
     this.innerHTML = `
     <header class="primary-header flex">
@@ -36,7 +36,7 @@ class Nav extends HTMLElement {
           <a href="./crew-commander.html" class="a-nav"> <span class="nav-span" aria-hidden="true">02</span>CREW </a>
         </li>
         <li class="nav-li" active="${getAttributeTech}">
-          <a href="" class="a-nav">
+          <a href="./technology-vehicle.html" class="a-nav">
             <span class="nav-span" aria-hidden="true">03</span>TECHNOLOGY</a
           >
         </li>
